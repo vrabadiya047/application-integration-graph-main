@@ -1,0 +1,13 @@
+runtime: nodejs18
+env: flex
+
+service: leanix-custom-report
+
+handlers:
+- url: /
+  script: dist/main.js
+
+resources:
+- url: /static
+  static_dir: assets
+
